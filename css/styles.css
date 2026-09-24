@@ -67,7 +67,6 @@ h4 {
   padding-left: 1.25rem;
 }
 
-/* Navegacion */
 .barra_navegacion-custom {
   position: sticky;
   top: 0;
@@ -142,7 +141,6 @@ h4 {
   background: var(--color-oscurosecundario);
 }
 
-/* Banner */
 .page-banner-custom {
   padding: 3rem 1.5rem 2.8rem;
   color: var(--white);
@@ -163,7 +161,6 @@ h4 {
   font-size: 1.1rem;
 }
 
-/* Estructura */
 main.container {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -209,7 +206,6 @@ main.container {
   row-gap: 1.5rem;
 }
 
-/* Formulario */
 .form-card {
   padding: 2rem;
   background: var(--white);
@@ -293,7 +289,7 @@ textarea.form-control {
   line-height: 1.4;
 }
 
-/* Botones y tarjetas */
+
 .btn {
   display: inline-block;
   padding: 0.6rem 1rem;
@@ -357,7 +353,6 @@ textarea.form-control {
   background: var(--gris-claro);
 }
 
-/* Pie de pagina */
 .site-footer-custom {
   margin-top: 3rem;
   padding: 3rem 0 1.5rem;
@@ -427,7 +422,6 @@ textarea.form-control {
   text-align: center;
 }
 
-/* Utilidades necesarias del HTML original */
 .text-muted { color: var(--gris); }
 .small { font-size: 0.875rem; }
 .mb-0 { margin-bottom: 0; }

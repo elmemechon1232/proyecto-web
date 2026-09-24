@@ -179,7 +179,68 @@
             </fieldset>
 
             <fieldset class="form-fieldset">
-              <legend class="form-legend">3. Observaciones y Aceptación</legend>
+              <legend class="form-legend">3. Seleccione alojamiento</legend>
+              <p class="text-muted small mb-4">
+                Si desea hospedarse en nuestras cabañas o campings, por favor indique su preferencia. Tenga en cuenta que la disponibilidad puede variar según la temporada y la demanda.
+              </p>
+              <p class="text-muted small mb-4">
+                <strong>Nota:</strong> Si no desea alojamiento, puede dejar esta sección en blanco y continuar con la reserva de actividades.
+              </p>
+
+              <div class="mb-3">
+                <label for="Alojamiento" class="form-label">Tipo de Alojamiento </label>
+                <select id="Alojamiento" 
+                        name="Alojamiento" 
+                        class="form-select" 
+                        required 
+                        aria-required="true">
+                  <option value="" disabled selected>-- Seleccione una opción --</option>
+                  <option value="refugio">Refugios de ensueño</option>
+                  <option value="termal">Relajacion termal</option>
+                  <option value="vistas">vistas inigualables</option>
+                </select>
+              </div>
+
+              <div class="row g-3">
+                <div class="col-md-6 mb-3">
+                  <label for="fecha" class="form-label">Fecha Estimada de Visita llegada </label>
+                  <input type="date" 
+                         id="fecha" 
+                         name="fecha" 
+                         class="form-control" 
+                         required 
+                         aria-required="true">
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="fecha" class="form-label">Fecha Estimada de Visita salida</label>
+                  <input type="date" 
+                         id="fecha" 
+                         name="fecha" 
+                         class="form-control" 
+                         required 
+                         aria-required="true">
+                </div>
+
+                
+                <div class="col-md-6 mb-3">
+                  <label for="cantidad" class="form-label">Cantidad de Personas </label>
+                  <input type="number" 
+                         id="cantidad" 
+                         name="cantidad" 
+                         class="form-control" 
+                         min="1" 
+                         max="20" 
+                         value="2" 
+                         required 
+                         aria-required="true">
+                </div>
+              </div>
+
+
+            </fieldset>
+
+            <fieldset class="form-fieldset">
+              <legend class="form-legend">4. Observaciones y Aceptación</legend>
 
               <div class="mb-3">
                 <label for="mensaje" class="form-label">Requerimientos Médicos, Dietéticos o Consultas <span class="required-mark">*</span></label>
