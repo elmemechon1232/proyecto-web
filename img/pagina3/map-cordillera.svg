@@ -1,77 +1,144 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 350" width="100%" height="350" role="img" aria-label="Mapa esquemático del Valle Cordillerano">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 762 448" width="762" height="448" role="img" aria-labelledby="titulo desc">
+  <title id="titulo">Mapa del sector cordillerano — Ruta G-25</title>
+  <desc id="desc">Mapa de senderos con la Ruta G-25, el Río de las Nieves, el Centro de Visitantes CONAF, el Refugio Las Cumbres, el Mirador Glaciar y el control de acceso en el kilómetro cero.</desc>
+
+  <style>
+    /* ===== PALETA CÁLIDA Y TERROSA =====
+       Cambiar un valor aquí lo cambia en todo el mapa. */
+    svg {
+      --papel:        #efe4d2;   /* fondo del mapa */
+      --papel-borde:  #3b2f24;   /* marco exterior */
+      --ficha:        #fdf8ef;   /* cajas de etiqueta y leyenda */
+      --ficha-borde:  #d6c3a4;   /* borde de las cajas */
+      --tinta:        #3a2e22;   /* texto principal */
+      --curva-nivel:  #c2ac8b;   /* curvas de nivel punteadas */
+      --ruta-base:    #4a3826;   /* cuerpo de la ruta */
+      --ruta-linea:   #d9a441;   /* marcas de la ruta */
+      --agua:         #85aba0;   /* río */
+      --agua-tinta:   #3f6b60;   /* rótulo del río */
+      --bosque:       #4a5a2b;   /* CONAF y guardaparques */
+      --sendero:      #6f8438;   /* senderos autorizados */
+      --oxido:        #a8452f;   /* mirador y aguja del norte */
+      --ocre:         #8c6239;   /* refugio */
+      --piedra:       #6b5a45;   /* control de acceso */
+      font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+    .et      { font-size: 13px; font-weight: 700; }
+    .leyenda { font-size: 12.5px; fill: var(--tinta); }
+    .rio     { font-size: 13.5px; font-style: italic; font-weight: 600; fill: var(--agua-tinta); }
+  </style>
+
   <defs>
-    <linearGradient id="mapBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#e9ecef" />
-      <stop offset="100%" stop-color="#dee2e6" />
-    </linearGradient>
+    <clipPath id="marco">
+      <rect x="6" y="6" width="750" height="436" rx="16"/>
+    </clipPath>
+    <filter id="sombra" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="2" flood-color="#3b2f24" flood-opacity="0.18"/>
+    </filter>
   </defs>
 
-  <!-- Fondo topográfico esquemático -->
-  <rect width="600" height="350" fill="url(#mapBg)" rx="8" />
+  <!-- ===== FONDO ===== -->
+  <rect x="6" y="6" width="750" height="436" rx="16" fill="var(--papel)"/>
 
-  <!-- Curvas de nivel / relieve -->
-  <path d="M 50,300 Q 150,180 300,200 T 550,150" fill="none" stroke="#ced4da" stroke-width="2" stroke-dasharray="4,4" />
-  <path d="M 30,220 Q 200,100 400,140 T 580,70" fill="none" stroke="#adb5bd" stroke-width="2" stroke-dasharray="4,4" />
-  <path d="M 80,120 Q 250,50 450,80 T 570,30" fill="none" stroke="#adb5bd" stroke-width="2" stroke-dasharray="4,4" />
+  <g clip-path="url(#marco)">
 
-  <!-- Río de montaña / Estero cordillerano -->
-  <path d="M 0,160 C 150,170 200,250 350,220 S 500,290 600,280" fill="none" stroke="#48cae4" stroke-width="8" stroke-linecap="round" opacity="0.85" />
-  <text x="360" y="245" font-family="'Segoe UI', sans-serif" font-size="11" fill="#0077b6" font-style="italic">Río de las Nieves</text>
+    <!-- ===== CURVAS DE NIVEL ===== -->
+    <g fill="none" stroke="var(--curva-nivel)" stroke-width="1.6" stroke-dasharray="7 6" stroke-linecap="round" opacity="0.8">
+      <path d="M 30 270 C 140 184, 300 132, 452 126 C 592 120, 692 150, 756 190"/>
+      <path d="M 52 300 C 168 232, 312 188, 452 184 C 578 180, 676 202, 756 238"/>
+      <path d="M 250 96 C 372 78, 520 84, 620 118 C 690 142, 730 180, 748 226"/>
+      <path d="M 120 330 C 236 292, 356 262, 470 250 C 580 238, 668 246, 756 272"/>
+    </g>
 
-  <!-- Ruta Principal (Camino vehicular pavimentado) -->
-  <path d="M 20,330 C 120,300 180,180 320,150 S 480,120 560,40" fill="none" stroke="#4a4e69" stroke-width="6" stroke-linecap="round" />
-  <path d="M 20,330 C 120,300 180,180 320,150 S 480,120 560,40" fill="none" stroke="#ffb703" stroke-width="2" stroke-dasharray="6,4" stroke-linecap="round" />
+    <!-- ===== RÍO DE LAS NIEVES ===== -->
+    <path d="M -14 206 C 62 214, 122 236, 192 252 C 262 268, 322 292, 402 304
+             C 472 314, 542 308, 602 292 C 652 279, 702 268, 776 256"
+          fill="none" stroke="var(--agua)" stroke-width="12" stroke-linecap="round"/>
 
-  <!-- Sendero Trekking Glaciar (Línea punteada verde) -->
-  <path d="M 320,150 Q 370,100 420,60" fill="none" stroke="#2d6a4f" stroke-width="3" stroke-dasharray="5,5" />
+    <!-- ===== RUTA G-25 ===== -->
+    <!-- Dos trazos superpuestos: el cuerpo oscuro y encima las marcas ocres. -->
+    <g fill="none" stroke-linecap="round">
+      <path d="M 44 408 C 140 338, 248 256, 300 222
+               C 336 198, 366 190, 404 189
+               C 460 186, 500 178, 528 166
+               C 580 144, 610 120, 646 88
+               C 676 60, 702 40, 732 20"
+            stroke="var(--ruta-base)" stroke-width="7"/>
+      <path d="M 44 408 C 140 338, 248 256, 300 222
+               C 336 198, 366 190, 404 189
+               C 460 186, 500 178, 528 166
+               C 580 144, 610 120, 646 88
+               C 676 60, 702 40, 732 20"
+            stroke="var(--ruta-linea)" stroke-width="3.4" stroke-dasharray="9 8"/>
+    </g>
 
-  <!-- Punto 1: Centro de Informaciones y Guardaparques (Destacado) -->
-  <g transform="translate(320, 150)">
-    <circle cx="0" cy="0" r="14" fill="#1b4332" opacity="0.2" />
-    <circle cx="0" cy="0" r="9" fill="#1b4332" />
-    <circle cx="0" cy="0" r="4" fill="#ffffff" />
-    <rect x="-85" y="-38" width="170" height="26" rx="4" fill="#1b4332" />
-    <text x="0" y="-21" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">Centro de Visitantes (CONAF)</text>
+    <!-- ===== SENDERO AL MIRADOR ===== -->
+    <path d="M 452 141 C 478 122, 504 100, 527 84"
+          fill="none" stroke="var(--sendero)" stroke-width="3.6"
+          stroke-dasharray="3 5" stroke-linecap="round"/>
   </g>
 
-  <!-- Punto 2: Refugio y Hospedajes -->
-  <g transform="translate(180, 180)">
-    <circle cx="0" cy="0" r="7" fill="#2b7a9b" />
-    <circle cx="0" cy="0" r="3" fill="#ffffff" />
-    <rect x="-60" y="12" width="120" height="22" rx="4" fill="#ffffff" stroke="#2b7a9b" stroke-width="1" />
-    <text x="0" y="27" font-family="'Segoe UI', sans-serif" font-size="10" font-weight="bold" fill="#2b7a9b" text-anchor="middle">Refugio Las Cumbres</text>
-  </g>
+  <!-- ===== RÓTULO DEL RÍO ===== -->
+  <text class="rio" x="503" y="312" text-anchor="middle">Río de las Nieves</text>
 
-  <!-- Punto 3: Base Trekking Glaciar -->
-  <g transform="translate(420, 60)">
-    <circle cx="0" cy="0" r="7" fill="#e63946" />
-    <circle cx="0" cy="0" r="3" fill="#ffffff" />
-    <rect x="-65" y="-28" width="130" height="22" rx="4" fill="#ffffff" stroke="#e63946" stroke-width="1" />
-    <text x="0" y="-13" font-family="'Segoe UI', sans-serif" font-size="10" font-weight="bold" fill="#e63946" text-anchor="middle">Mirador Glaciar (3.200m)</text>
-  </g>
+  <!-- ===== MARCADORES ===== -->
+  <!-- Control de acceso -->
+  <circle cx="55" cy="400" r="8" fill="var(--piedra)" stroke="var(--ficha)" stroke-width="2"/>
+  <!-- Refugio -->
+  <circle cx="227" cy="229" r="7" fill="var(--ficha)" stroke="var(--ocre)" stroke-width="4"/>
+  <!-- Mirador -->
+  <circle cx="531" cy="78" r="7" fill="var(--ficha)" stroke="var(--oxido)" stroke-width="4"/>
+  <!-- Centro de visitantes -->
+  <circle cx="402" cy="190" r="14" fill="var(--bosque)" opacity="0.22"/>
+  <circle cx="402" cy="190" r="7" fill="var(--ficha)" stroke="var(--bosque)" stroke-width="4"/>
 
-  <!-- Punto 4: Entrada y Retén de Carabineros -->
-  <g transform="translate(40, 320)">
-    <circle cx="0" cy="0" r="6" fill="#495057" />
-    <rect x="15" y="-12" width="130" height="20" rx="3" fill="#ffffff" stroke="#ced4da" />
-    <text x="80" y="2" font-family="'Segoe UI', sans-serif" font-size="10" fill="#212529" text-anchor="middle">Control de Acceso Km 0</text>
+  <!-- ===== ETIQUETAS ===== -->
+  <!-- Mirador Glaciar -->
+  <g filter="url(#sombra)">
+    <rect x="446" y="45" width="168" height="27" rx="6" fill="var(--ficha)" stroke="var(--oxido)" stroke-width="2"/>
   </g>
+  <text class="et" x="530" y="63.5" text-anchor="middle" fill="var(--oxido)">Mirador Glaciar (3.200m)</text>
 
-  <!-- Rosa de los vientos / Brújula -->
-  <g transform="translate(540, 300)">
-    <circle cx="0" cy="0" r="22" fill="#ffffff" stroke="#adb5bd" stroke-width="1.5" />
-    <polygon points="0,-18 5,-2 0,0 -5,-2" fill="#e63946" />
-    <polygon points="0,18 5,2 0,0 -5,2" fill="#6c757d" />
-    <text x="0" y="-6" font-family="'Segoe UI', sans-serif" font-size="10" font-weight="bold" fill="#e63946" text-anchor="middle">N</text>
-    <text x="0" y="14" font-family="'Segoe UI', sans-serif" font-size="8" fill="#6c757d" text-anchor="middle">S</text>
+  <!-- Centro de Visitantes -->
+  <g filter="url(#sombra)">
+    <rect x="298" y="146" width="212" height="30" rx="7" fill="var(--bosque)"/>
   </g>
+  <text class="et" x="404" y="166" text-anchor="middle" fill="#fdf8ef">Centro de Visitantes (CONAF)</text>
 
-  <!-- Leyenda en el mapa -->
-  <rect x="15" y="15" width="150" height="70" rx="5" fill="#ffffff" opacity="0.92" stroke="#dee2e6" />
-  <circle cx="28" cy="30" r="4" fill="#1b4332" />
-  <text x="40" y="34" font-family="'Segoe UI', sans-serif" font-size="10" fill="#2b2d42">Guardaparques</text>
-  <line x1="22" y1="48" x2="35" y2="48" stroke="#4a4e69" stroke-width="3" />
-  <text x="40" y="52" font-family="'Segoe UI', sans-serif" font-size="10" fill="#2b2d42">Ruta G-25 Principal</text>
-  <line x1="22" y1="66" x2="35" y2="66" stroke="#2d6a4f" stroke-width="2" stroke-dasharray="3,2" />
-  <text x="40" y="70" font-family="'Segoe UI', sans-serif" font-size="10" fill="#2b2d42">Senderos Autorizados</text>
+  <!-- Refugio Las Cumbres -->
+  <g filter="url(#sombra)">
+    <rect x="152" y="245" width="155" height="27" rx="6" fill="var(--ficha)" stroke="var(--ocre)" stroke-width="2"/>
+  </g>
+  <text class="et" x="229.5" y="263.5" text-anchor="middle" fill="var(--ocre)">Refugio Las Cumbres</text>
+
+  <!-- Control de Acceso -->
+  <g filter="url(#sombra)">
+    <rect x="72" y="388" width="164" height="26" rx="5" fill="var(--ficha)" stroke="var(--ficha-borde)" stroke-width="1.5"/>
+  </g>
+  <text class="et" x="154" y="405.5" text-anchor="middle" fill="var(--tinta)" style="font-size:12.5px">Control de Acceso Km 0</text>
+
+  <!-- ===== LEYENDA ===== -->
+  <g filter="url(#sombra)">
+    <rect x="20" y="22" width="196" height="92" rx="9" fill="var(--ficha)" stroke="var(--ficha-borde)" stroke-width="1.5"/>
+  </g>
+  <circle cx="38" cy="44" r="6.5" fill="var(--bosque)"/>
+  <text class="leyenda" x="55" y="48.5">Guardaparques</text>
+
+  <line x1="28" y1="68" x2="49" y2="68" stroke="var(--ruta-base)" stroke-width="5.5" stroke-linecap="round"/>
+  <text class="leyenda" x="55" y="72.5">Ruta G-25 Principal</text>
+
+  <line x1="28" y1="91" x2="49" y2="91" stroke="var(--sendero)" stroke-width="3.6"
+        stroke-dasharray="3 4.5" stroke-linecap="round"/>
+  <text class="leyenda" x="55" y="95.5">Senderos Autorizados</text>
+
+  <!-- ===== ROSA DE LOS VIENTOS ===== -->
+  <g filter="url(#sombra)">
+    <circle cx="678" cy="378" r="29" fill="var(--ficha)" stroke="var(--ficha-borde)" stroke-width="2"/>
+  </g>
+  <path d="M 678 353 L 685.5 386 L 678 380 L 670.5 386 Z" fill="var(--oxido)"/>
+  <path d="M 678 403 L 685.5 386 L 678 392 L 670.5 386 Z" fill="var(--piedra)" opacity="0.75"/>
+
+  <!-- ===== MARCO ===== -->
+  <rect x="6" y="6" width="750" height="436" rx="16" fill="none"
+        stroke="var(--papel-borde)" stroke-width="3"/>
 </svg>
