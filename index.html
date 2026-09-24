@@ -15,7 +15,7 @@
     <body>
         <!-- Barra de navegación responsiva -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <main class="container">
+            <div class="container">
                 <a class="navbar-brand" href="index.html">Destino Cordillera</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Navegación"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -46,8 +46,8 @@
                 <div class="col-lg-8">
                     <!-- Tarjeta destacada con video continuo tipo GIF -->
                     <div class="card mb-4 overflow-hidden shadow-sm">
-                        <div class="ratio ratio-21x9">
-                            <video autoplay muted loop playsinline class="video-cover">
+                        <div class="ratio ratio-16x9">
+                            <video autoplay muted loop playsinline class="video-cover position-absolute top-0 start-0 w-100 h-100">
                                 <source src="img/montana.mp4" type="video/mp4" />
                                 Su navegador no admite la reproducción de video HTML5.
                             </video>
@@ -66,7 +66,7 @@
                         <div class="col-lg-6 mb-4 d-flex align-items-stretch">
                             <div class="card w-100 d-flex flex-column overflow-hidden shadow-sm">
                                 <a href="pagina1.html">
-                                    <img class="card-img-top img-tarjeta-estandar" src="img/rafting.jpg" alt="..." />
+                                    <img class="card-img-top img-tarjeta-estandar" src="img/rafting.jpg" alt="Rafting en el río cordillerano" />
                                 </a>
                                 <div class="card-body d-flex flex-column">
                                     <div class="small text-muted">Aventura Fluvial</div>
@@ -81,7 +81,7 @@
                         <div class="col-lg-6 mb-4 d-flex align-items-stretch">
                             <div class="card w-100 d-flex flex-column overflow-hidden shadow-sm">
                                 <a href="pagina1.html">
-                                    <img class="card-img-top" src="img/trekking.jpeg" alt="Trekking en la nieve" style="height: 190px; width: 100%; object-fit: cover;" />
+                                    <img class="card-img-top img-tarjeta-estandar" src="img/trekking.jpeg" alt="Trekking en la nieve" />
                                 </a>
                                 <div class="card-body d-flex flex-column">
                                     <div class="small text-muted">Expedición Invernal</div>
@@ -155,59 +155,59 @@
         </main>
 
         <!-- Pie de página unificado -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <div class="row">
-                    <!-- Columna 1: Descripción institucional -->
-                    <div class="col-lg-3 col-md-6 mb-4">
-                        <h5 class="fw-bold mb-3 pb-2" style="border-bottom: 2px solid #5BC0BE; display: inline-block;">Destino Cordillera</h5>
-                        <p class="small">
-                            Brindando un servicio de excelencia y experiencias sublimes en el corazón de nuestras montañas.
-                        </p>
-                    </div>
-
-                    <!-- Columna 2: Enlaces rápidos -->
-                    <div class="col-lg-3 col-md-6 mb-4">
-                        <h5 class="fw-bold mb-3 pb-2" style="border-bottom: 2px solid #5BC0BE; display: inline-block;">Enlaces Rápidos</h5>
-                        <ul class="list-unstyled small">
-                            <li class="mb-2"><a href="index.html" class="text-light text-decoration-none">Página de Inicio</a></li>
-                            <li class="mb-2"><a href="pagina1.html" class="text-light text-decoration-none">Panoramas y Trekking</a></li>
-                            <li class="mb-2"><a href="pagina2.html" class="text-light text-decoration-none">Alojamiento y Gastronomía</a></li>
-                            <li class="mb-2"><a href="pagina3.html" class="text-light text-decoration-none">Reservas y Ubicación</a></li>
-                        </ul>
-                    </div>
-
-                    <!-- Columna 3: Seguridad y Contacto -->
-                    <div class="col-lg-3 col-md-6 mb-4">
-                        <h5 class="fw-bold mb-3 pb-2" style="border-bottom: 2px solid #5BC0BE; display: inline-block;">Seguridad y Contacto</h5>
-                        <ul class="list-unstyled small">
-                            <li class="mb-2"><strong>Centro de control:</strong> Km 24 Ruta G-25</li>
-                            <li class="mb-2"><strong>Emergencias:</strong> 136</li>
-                            <li class="mb-2"><strong>Guardaparques:</strong> +56 9 8765 4321</li>
-                            <li class="mb-2"><strong>Email:</strong> contacto@destinocordillera.cl</li>
-                        </ul>
-                    </div>
-
-                    <!-- Columna 4: Datos académicos -->
-                    <div class="col-lg-3 col-md-6 mb-4">
-                        <h5 class="fw-bold mb-3 pb-2" style="border-bottom: 2px solid #5BC0BE; display: inline-block;">Datos Legales</h5>
-                        <ul class="list-unstyled small">
-                            <li class="mb-2">Asignatura de Desarrollo Web</li>
-                            <li class="mb-2">Solemne 1</li>
-                        </ul>
-                    </div>
+    <footer class="text-light py-5 mt-5 bg-footer">
+        <div class="container">
+            <div class="row">
+                <!-- Columna 1: Descripción institucional -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="fw-bold mb-3 pb-2" style="border-bottom: 2px solid #5BC0BE; display: inline-block;">Destino Cordillera</h5>
+                    <p class="small">
+                        Brindando un servicio de excelencia y experiencias sublimes en el corazón de nuestras montañas.
+                    </p>
                 </div>
 
-                <hr class="border-secondary opacity-50 mb-4">
+                <!-- Columna 2: Enlaces rápidos -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="fw-bold mb-3 pb-2" style="border-bottom: 2px solid #5BC0BE; display: inline-block;">Enlaces Rápidos</h5>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2"><a href="index.html" class="text-light text-decoration-none">Página de Inicio</a></li>
+                        <li class="mb-2"><a href="pagina1.html" class="text-light text-decoration-none">Panoramas y Trekking</a></li>
+                        <li class="mb-2"><a href="pagina2.html" class="text-light text-decoration-none">Alojamiento y Gastronomía</a></li>
+                        <li class="mb-2"><a href="pagina3.html" class="text-light text-decoration-none">Reservas y Ubicación</a></li>
+                    </ul>
+                </div>
 
-                <!-- Derechos reservados -->
-                <div class="row">
-                    <div class="col-12 text-center text-md-end small text-light">
-                        <p class="mb-0">© 2026 Destino Cordillera - Proyecto para desarrollo web.</p>
-                    </div>
+                <!-- Columna 3: Seguridad y Contacto -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="fw-bold mb-3 pb-2" style="border-bottom: 2px solid #5BC0BE; display: inline-block;">Seguridad y Contacto</h5>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2"><strong>Centro de control:</strong> Km 24 Ruta G-25</li>
+                        <li class="mb-2"><strong>Emergencias:</strong> 136</li>
+                        <li class="mb-2"><strong>Guardaparques:</strong> +56 9 8765 4321</li>
+                        <li class="mb-2"><strong>Email:</strong> contacto@destinocordillera.cl</li>
+                    </ul>
+                </div>
+
+                <!-- Columna 4: Datos académicos -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="fw-bold mb-3 pb-2" style="border-bottom: 2px solid #5BC0BE; display: inline-block;">Datos Legales</h5>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2">Asignatura de Desarrollo Web</li>
+                        <li class="mb-2">Solemne 1</li>
+                    </ul>
                 </div>
             </div>
-        </footer>
+
+            <hr class="border-secondary opacity-50 mb-4">
+
+            <!-- Derechos reservados -->
+            <div class="row">
+                <div class="col-12 text-center text-md-end small text-light">
+                    <p class="mb-0">© 2026 Destino Cordillera - Proyecto para desarrollo web.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
         <!-- Scripts JS de Bootstrap -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>

@@ -496,34 +496,57 @@ textarea.form-control {
   background-position: center;
 }
 
-.bg-footer {
-  background-color: #212529;
+footer.bg-footer {
+  background-color: #212529 !important;
+  color: #ffffff !important;
+}
+
+footer.bg-footer h5 {
+  color: #ffffff !important;
+}
+
+footer.bg-footer p,
+footer.bg-footer li,
+footer.bg-footer span {
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+footer.bg-footer a {
+  color: #ffffff !important;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+footer.bg-footer a:hover {
+  color: #5BC0BE !important;
+  text-decoration: underline;
+}
+
+footer.bg-footer strong {
+  color: #ffffff !important;
 }
 
 .img-tarjeta-estandar {
-  height: 190px;
-  width: 100%;
-  object-fit: cover;
+  height: 190px !important;
+  width: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
 }
 
 .img-tarjeta-alta {
-  height: 250px;
-  width: 100%;
-  object-fit: cover;
+  height: 250px !important;
+  width: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
 }
 
 .video-cover {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
+  object-fit: cover !important;
+  width: 100% !important;
+  height: 100% !important;
 }
 
-.icono-widget {
-  width: 25px;
-  height: 25px;
-  object-fit: contain;
-}
-
+/* Tarjeta y títulos de contacto (pagina3) */
 .tarjeta-contacto {
   background-color: #f8fafc;
   border-top: 4px solid #1b4332 !important;
