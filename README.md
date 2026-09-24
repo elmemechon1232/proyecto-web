@@ -1,3 +1,4 @@
+
 # proyecto-web
 Pagina web para la comuna "Destino Cordillera", sitio turistico fictiocio creado para la prueba solemne 1 de la asignatura desarrollo de aplicaciones web
 
@@ -24,3 +25,14 @@ Responsabilidades:
     README: Emerson Gálvez
     Revision Footers/enlaces correctos: Jazmin Ruz
     Evidencias GIt: Cada miembro desde su avance
+
+---
+Complementos técnicos adicionales del proyecto:
+
+Instrucciones de ejecución:
+Para visualizar el proyecto localmente, clona el repositorio en tu equipo y haz doble clic sobre el archivo "index.html" para abrirlo en cualquier navegador web moderno.
+
+Detalles específicos de responsabilidades y tecnologías:
+- Requisito CSS puro: La Pagina 3 (Reserva y contacto) fue desarrollada por Emerson Gálvez estilizando a mano con CSS, sin depender de frameworks.
+- Planificación y diseño: Jazmín Ruz realizó la planificación general del proyecto y la estilización de la grilla responsiva transversal.
+- Ajustes transversales: Matías Palma se encargó de la modificación de la estructura general, resolución de problemas y correcciones cruzadas en múltiples archivos del proyecto para unificar las vistas.
