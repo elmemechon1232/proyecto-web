@@ -1,6 +1,7 @@
 
 # proyecto-web
 Proyecto web para la comuna ficticia Destino Cordillera, desarrollado como trabajo de la asignatura Desarrollo de Aplicaciones Web. El objetivo del sitio es promocionar servicios turísticos, actividades, alojamiento y reservas en una zona cordillerana ficticia, aplicando HTML5, CSS3 y Bootstrap.
+
 Nombre del proyecto: Plataforma de Turismo Local Destino Cordillera
 
 Integrantes: Matias Palma - Jazmin Ruz - Emerson Gálvez
