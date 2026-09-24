@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Destino Cordillera - Reserva y contacto</title>
+    
+    <link rel="icon" type="image/webp" href="img/icono.webp" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet" />
 </head>
 <body class="pagina-reserva">
@@ -26,48 +30,58 @@
 
   <main class="container py-5">
     <section class="contact-map-layout" aria-label="Información de contacto y ubicación">
+      <!-- Tarjeta 1: Centro de Atención -->
       <article class="card border-0 shadow-sm" style="background-color: #f8fafc; border-top: 4px solid #1b4332 !important;">
-        <div class="card-body p-4">
-          <h3 class="h5 fw-bold" style="color: #1b4332;">Centro de Atención al Visitante</h3>
-          <p class="text-muted small">
-            Para consultas inmediatas sobre condiciones climáticas o emergencias, comunícate directamente con nuestros canales oficiales:
-          </p>
+        <div class="card-body p-4 d-flex flex-column justify-content-between">
+          <div>
+            <h3 class="h5 fw-bold" style="color: #1b4332;">Centro de Atención al Visitante</h3>
+            <p class="text-muted small">
+              Para consultas inmediatas sobre condiciones climáticas o emergencias, comunícate directamente con nuestros canales oficiales:
+            </p>
 
-          <ul class="list-unstyled small mb-0">
-            <li class="py-2 border-bottom">
-              <strong>Ubicación Física:</strong><br>
-              Ruta G-25 Km 24, Sector El Melocotón, Cajón del Maipo / Cordillera Central.
-            </li>
-            <li class="py-2 border-bottom">
-              <strong>Teléfono Centro de Información:</strong><br>
-              +56 2 1234 4321 / +56 9 1122 3344
-            </li>
-            <li class="py-2 border-bottom">
-              <strong>Emergencias de Montaña (Socorro Andino):</strong><br>
-              136 (Línea directa nacional)
-            </li>
-            <li class="py-2 border-bottom">
-              <strong>Correo Electrónico Oficial:</strong><br>
-              reservas@destinocordillera.cl
-            </li>
-            <li class="pt-2">
-              <strong>Horario de Atención Presencial:</strong><br>
-              Lunes a Domingo de 08:00 a 18:30 hrs.
-            </li>
-          </ul>
+            <ul class="list-unstyled small mb-0">
+              <li class="py-2 border-bottom">
+                <strong>Ubicación Física:</strong><br>
+                Ruta G-25 Km 24, Sector El Melocotón, Cajón del Maipo / Cordillera Central.
+              </li>
+              <li class="py-2 border-bottom">
+                <strong>Teléfono Centro de Información:</strong><br>
+                +56 2 1234 4321 / +56 9 1122 3344
+              </li>
+              <li class="py-2 border-bottom">
+                <strong>Emergencias de Montaña (Socorro Andino):</strong><br>
+                136 (Línea directa nacional)
+              </li>
+              <li class="py-2 border-bottom">
+                <strong>Correo Electrónico Oficial:</strong><br>
+                reservas@destinocordillera.cl
+              </li>
+              <li class="pt-2">
+                <strong>Horario de Atención Presencial:</strong><br>
+                Lunes a Domingo de 08:00 a 18:30 hrs.
+              </li>
+            </ul>
+          </div>
         </div>
       </article>
 
+      <!-- Tarjeta 2: Mapa Interactivo Google Maps -->
       <article class="card map-card border-0 shadow-sm overflow-hidden">
         <div class="card-header bg-dark text-white py-3">
-          <h3 class="h6 fw-bold mb-0">Mapa Esquemático de Acceso y Rutas</h3>
+          <h3 class="h6 fw-bold mb-0">Ubicación Satelital y Acceso</h3>
         </div>
         <div class="card-body p-0">
-          <img src="img/pagina3/map-cordillera.svg" alt="Mapa esquemático con las rutas y puntos de encuentro en Destino Cordillera" class="w-100 h-auto">
+          <iframe
+            src="https://maps.google.com/maps?q=Cajón%20del%20Maipo&t=&z=11&ie=UTF8&iwloc=&output=embed"
+            loading="lazy"
+            allowfullscreen=""
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Ubicación referencial Cajón del Maipo"
+          ></iframe>
         </div>
         <div class="card-footer bg-light small">
           <p class="mb-1"><strong>Coordenadas GPS Centro de Control:</strong> 33°44'28.5"S 70°14'12.2"W</p>
-          <p class="text-muted mb-0">Recomendación: Descargar mapa sin conexión antes de ingresar al cañón cordillerano.</p>
+          <p class="text-muted mb-0">Ubicación referencial: Cajón del Maipo, Cordillera de los Andes.</p>
         </div>
       </article>
     </section>

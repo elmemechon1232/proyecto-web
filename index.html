@@ -1,208 +1,216 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <title>Destino Cordillera - Inicio</title>
         
+        <!-- Favicon institucional -->
+        <link rel="icon" type="image/webp" href="img/icono.webp" />
 
+        <!-- Estilos de Bootstrap 5 y estilos locales -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-        
-
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body>
-        <!-- Responsive navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">Destino Cordillera</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="pagina1.html">Panoramas</a></li>
-                    <li class="nav-item"><a class="nav-link" href="pagina2.html">Alojamiento y gastronomía</a></li>
-                    <li class="nav-item"><a class="nav-link" href="pagina3.html">Reserva y contacto</a></li>
-                </ul>
+        <!-- Barra de navegación responsiva -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Destino Cordillera</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Navegación"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pagina1.html">Panoramas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pagina2.html">Alojamiento y gastronomía</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pagina3.html">Reserva y contacto</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
-        <!-- Page header with logo and tagline-->
+        </nav>
+
+        <!-- Cabecera principal institucional -->
         <header class="text-light py-5 mb-5" style="background-color: #112A22;">
             <div class="container">
                 <div class="text-center my-5">
-                    <h1 class="fw-bolder">Welcome to Blog Home!</h1>
-                    <p class="lead mb-0">A Bootstrap 5 starter layout for your next blog homepage</p>
+                    <h1 class="fw-bolder">Destino Cordillera</h1>
+                    <p class="lead mb-0">Portal oficial de expediciones, descanso y experiencias en la alta montaña.</p>
                 </div>
             </div>
         </header>
-        <!-- Page content-->
+
+        <!-- Contenido central -->
         <div class="container">
             <div class="row">
-                <!-- Blog entries-->
+                <!-- Entradas principales -->
                 <div class="col-lg-8">
-                    <!-- Featured blog post-->
-                    <div class="card mb-4">
-                        <a href="#!"><img class="card-img-top" src="https://dummyimage.com/850x350/dee2e6/6c757d.jpg" alt="..." /></a>
+                    <!-- Tarjeta destacada con video continuo tipo GIF -->
+                    <div class="card mb-4 overflow-hidden shadow-sm">
+                        <div class="ratio ratio-21x9">
+                            <video autoplay muted loop playsinline style="object-fit: cover; width: 100%; height: 100%;">
+                                <source src="img/montana.mp4" type="video/mp4" />
+                                Su navegador no admite la reproducción de video HTML5.
+                            </video>
+                        </div>
                         <div class="card-body">
-                            <div class="small text-muted">January 1, 2023</div>
-                            <h2 class="card-title">Featured Post Title</h2>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
-                            <a class="btn btn-primary" href="#!">Read more →</a>
+                            <div class="small text-muted">Temporada 2026</div>
+                            <h2 class="card-title">Descubre las Rutas y Panoramas Cordilleranos</h2>
+                            <p class="card-text">Embárquese en travesías de alta montaña, senderos de trekking guiados, descensos en balsa y cabalgatas por los paisajes más imponentes de nuestra geografía.</p>
+                            <a class="btn btn-primary" href="pagina1.html">Ver panoramas →</a>
                         </div>
                     </div>
-                    <!-- Nested row for non-featured blog posts-->
+
+                    <!-- Fila anidada para entradas secundarias -->
                     <div class="row">
-                        <div class="col-lg-6">
-                            <!-- Blog post-->
-                            <div class="card mb-4">
-                                <a href="#!"><img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
-                                <div class="card-body">
-                                    <div class="small text-muted">January 1, 2023</div>
-                                    <h2 class="card-title h4">Post Title</h2>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.</p>
-                                    <a class="btn btn-primary" href="#!">Read more →</a>
+                        <!-- Tarjeta Rafting -->
+                        <div class="col-lg-6 mb-4 d-flex align-items-stretch">
+                            <div class="card w-100 d-flex flex-column overflow-hidden shadow-sm">
+                                <a href="pagina1.html">
+                                    <img class="card-img-top" src="img/rafting.jpg" alt="Rafting en el río cordillerano" style="height: 190px; width: 100%; object-fit: cover;" />
+                                </a>
+                                <div class="card-body d-flex flex-column">
+                                    <div class="small text-muted">Aventura Fluvial</div>
+                                    <h2 class="card-title h4">Descenso en Rápidos</h2>
+                                    <p class="card-text">Navegue las aguas bravas del río cordillerano con guías certificados y equipamiento técnico de máxima seguridad.</p>
+                                    <a class="btn btn-primary mt-auto" href="pagina1.html">Ver panoramas →</a>
                                 </div>
                             </div>
-
                         </div>
-                        <div class="col-lg-6">
-                            <!-- Blog post-->
-                            <div class="card mb-4">
-                                <a href="#!"><img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
-                                <div class="card-body">
-                                    <div class="small text-muted">January 1, 2023</div>
-                                    <h2 class="card-title h4">Post Title</h2>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.</p>
-                                    <a class="btn btn-primary" href="pagina2.html">Ver alojamientos →</a>
+
+                        <!-- Tarjeta Trekking -->
+                        <div class="col-lg-6 mb-4 d-flex align-items-stretch">
+                            <div class="card w-100 d-flex flex-column overflow-hidden shadow-sm">
+                                <a href="pagina1.html">
+                                    <img class="card-img-top" src="img/trekking.jpeg" alt="Trekking en la nieve" style="height: 190px; width: 100%; object-fit: cover;" />
+                                </a>
+                                <div class="card-body d-flex flex-column">
+                                    <div class="small text-muted">Expedición Invernal</div>
+                                    <h2 class="card-title h4">Senderismo en Nieve</h2>
+                                    <p class="card-text">Travesía guiada con raquetas de nieve contemplando los embalses y las cumbres más imponentes de la cordillera.</p>
+                                    <a class="btn btn-primary mt-auto" href="pagina1.html">Ver panoramas →</a>
                                 </div>
                             </div>
-
                         </div>
                     </div>
-                    <!-- Pagination-->
+
+                    <!-- Paginación -->
                     <nav aria-label="Pagination">
                         <hr class="my-0" />
-
                     </nav>
                 </div>
-<!-- Slide Widgets -->
-            <div class="col-lg-4">
 
-                <!-- Tarjet 1: -->
-                <div class="card mb-4">
-                    <div class="card-header fw-bold bg-light">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.
+                <!-- Barra lateral de widgets informativos -->
+                <div class="col-lg-4">
+                    <!-- Widget 1: Estado de Rutas -->
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-header fw-bold bg-light text-dark">
+                            Estado de Senderos y Rutas
+                        </div>
+                        <ul class="list-group list-group-flush small">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Sendero El Morado
+                                <span class="badge bg-success rounded-pill">Abierto</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Termas del Plomo
+                                <span class="badge bg-success rounded-pill">Abierto</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Cruce Glaciar San Francisco
+                                <span class="badge bg-warning text-dark rounded-pill">Precaución</span>
+                            </li>
+                        </ul>
                     </div>
-                    <ul class="list-group list-group-flush small">
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.
-                            <span class="badge bg-success rounded-pill">Abierto</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.
-                            <span class="badge bg-success rounded-pill">Abierto</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.
-                            <span class="badge bg-warning text-dark rounded-pill">Precaución</span>
-                        </li>
-                    </ul>
+
+                    <!-- Widget 2: Clima -->
+                    <div class="card mb-4 text-white bg-dark shadow-sm">
+                        <div class="card-header fw-bold border-bottom border-secondary">
+                            Condiciones Climáticas Actuales
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title fw-bolder">14°C</h2>
+                            <p class="card-text small mb-0">
+                                Pronóstico despejado en el valle.<br>
+                                Temperatura mínima esperada: 5°C.<br>
+                                Vientos de 15 km/h hacia el este.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Widget 3: Recomendaciones -->
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-header fw-bold bg-light text-dark">
+                            Recomendaciones al Visitante
+                        </div>
+                        <div class="card-body">
+                            <ul class="small mb-0 text-muted">
+                                <li class="mb-2">Porte calzado de trekking con suela antideslizante.</li>
+                                <li class="mb-2">Retire la totalidad de sus residuos para preservar el entorno.</li>
+                                <li>Lleve consigo reserva hídrica mínima de 2 litros por persona.</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </div>
 
-                <!-- Tarjet 2: -->
-                <div class="card mb-4 text-white bg-dark">
-                    <div class="card-header fw-bold border-bottom border-secondary">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.
-                    </div>
-                    <div class="card-body">
-                        <h2 class="card-title fw-bolder">14°C</h2>
-                        <p class="card-text small mb-0">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.<br>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.<br>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.
+        <!-- Pie de página unificado -->
+        <footer class="text-light py-5 mt-5" style="background-color: #112A22;">
+            <div class="container">
+                <div class="row">
+                    <!-- Columna 1: Descripción institucional -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h5 class="fw-bold mb-3 pb-2" style="border-bottom: 2px solid #5BC0BE; display: inline-block;">Destino Cordillera</h5>
+                        <p class="small">
+                            Brindando un servicio de excelencia y experiencias sublimes en el corazón de nuestras montañas.
                         </p>
                     </div>
-                </div>
 
-                <!-- Tarjet 3: -->
-                <div class="card mb-4">
-                    <div class="card-header fw-bold bg-light">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.
+                    <!-- Columna 2: Enlaces rápidos -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h5 class="fw-bold mb-3 pb-2" style="border-bottom: 2px solid #5BC0BE; display: inline-block;">Enlaces Rápidos</h5>
+                        <ul class="list-unstyled small">
+                            <li class="mb-2"><a href="index.html" class="text-light text-decoration-none">Página de Inicio</a></li>
+                            <li class="mb-2"><a href="pagina1.html" class="text-light text-decoration-none">Panoramas y Trekking</a></li>
+                            <li class="mb-2"><a href="pagina2.html" class="text-light text-decoration-none">Alojamiento y Gastronomía</a></li>
+                            <li class="mb-2"><a href="pagina3.html" class="text-light text-decoration-none">Reservas y Ubicación</a></li>
+                        </ul>
                     </div>
-                    <div class="card-body">
-                        <ul class="small mb-0 text-muted">
-                            <li class="mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.</li>
-                            <li class="mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.</li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.</li>
+
+                    <!-- Columna 3: Seguridad y Contacto -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h5 class="fw-bold mb-3 pb-2" style="border-bottom: 2px solid #5BC0BE; display: inline-block;">Seguridad y Contacto</h5>
+                        <ul class="list-unstyled small">
+                            <li class="mb-2"><strong>Centro de control:</strong> Km 24 Ruta G-25</li>
+                            <li class="mb-2"><strong>Emergencias:</strong> 136</li>
+                            <li class="mb-2"><strong>Guardaparques:</strong> +56 9 8765 4321</li>
+                            <li class="mb-2"><strong>Email:</strong> contacto@destinocordillera.cl</li>
+                        </ul>
+                    </div>
+
+                    <!-- Columna 4: Datos académicos -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h5 class="fw-bold mb-3 pb-2" style="border-bottom: 2px solid #5BC0BE; display: inline-block;">Datos Legales</h5>
+                        <ul class="list-unstyled small">
+                            <li class="mb-2">Asignatura de Desarrollo Web</li>
+                            <li class="mb-2">Solemne 1</li>
                         </ul>
                     </div>
                 </div>
 
-</div>
-            </div>
-        </div>
-<!-- FOOTER -->
-<footer class="text-light py-5" style="background-color: #112A22;">
-    <div class="container">
-        <div class="row">
-            
-            <!-- columna 1: descripcion -->
-            <div class="col-lg-3 col-md-6 mb-4">
-                <h5 class=>Destino Cordillera</h5>
-                <p class="small">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.
-                </p>
-            </div>
+                <hr class="border-secondary opacity-50 mb-4">
 
-            <!-- columna 2: enlaces rapidos -->
-            <div class="col-lg-3 col-md-6 mb-4">
-                <h5 class=>Enlaces rapidos</h5>
-                <ul class="list-unstyled small">
-                    <li class="mb-2"><a href="index.html" class="text-light text-decoration-none">Página de Inicio</a></li>
-                    <li class="mb-2"><a href="pagina1.html" class="text-light text-decoration-none">Panoramas</a></li>
-                    <li class="mb-2"><a href="pagina2.html" class="text-light text-decoration-none">Hospedajes y sabores</a></li>
-                    <li class="mb-2"><a href="pagina3.html" class="text-light text-decoration-none">Reservas y ubicación</a></li>
-                </ul>
+                <!-- Derechos reservados -->
+                <div class="row">
+                    <div class="col-12 text-center text-md-end small text-light">
+                        <p class="mb-0">© 2026 Destino Cordillera - Proyecto para desarrollo web.</p>
+                    </div>
+                </div>
             </div>
+        </footer>
 
-            <!-- columna 3: seguridad y contacto -->
-            <div class="col-lg-3 col-md-6 mb-4">
-                <h5 class=>Seguridad y Contacto</h5>
-                <ul class="list-unstyled small">
-                    <li class="mb-2"><strong>Centro de control:</strong> Carretera Km 24</li>
-                    <li class="mb-2"><strong>Emergencias:</strong> 136</li>
-                    <li class="mb-2"><strong>Guardaparques:</strong> +56 9 8765 4321</li>
-                    <li class="mb-2"><strong>Email:</strong> contacto@destinocordillera.cl</li>
-                </ul>
-            </div>
-
-            <!-- columna 4: datos-->
-            <div class="col-lg-3 col-md-6 mb-4">
-                <h5 class=>Datos </h5>
-                <ul class="list-unstyled small">
-                    <li class="mb-2">Desarrollo Web</li>
-                    <li class="mb-2">Solemne 1</li>
-                </ul>
-            </div>
-            
-        </div>
-
-   
-        <hr class="border-secondary opacity-50 mb-4">
-
-        <!-- Copyright -->
-        <div class="row">
-            <div class="col-12 text-center text-md-end small text-light">
-                <p class="mb-0">© 2026 Destino Cordillera - Proyecto para desarrollo web.</p>
-            </div>
-        </div>
-    </div>
-</footer>
-
-        <!-- Bootstrap core JS-->
+        <!-- Scripts JS de Bootstrap -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
     </body>
 </html>

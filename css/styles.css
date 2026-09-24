@@ -173,21 +173,32 @@ main.container {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
+  align-items: stretch;
 }
 
 .pagina-reserva .contact-map-layout .card {
+  display: flex;
+  flex-direction: column;
   height: 100%;
 }
 
 .pagina-reserva .contact-map-layout .map-card {
-  order: -1;
+  order: unset; /* Permite un flujo de lectura natural o respeta el orden del HTML */
 }
 
-.pagina-reserva .contact-map-layout .map-card img {
-  display: block;
+.pagina-reserva .contact-map-layout .map-card .card-body {
+  flex: 1 1 auto;
+  min-height: 280px;
+  position: relative;
+}
+
+.pagina-reserva .contact-map-layout .map-card iframe {
   width: 100%;
-  height: auto;
+  height: 100%;
+  min-height: 280px;
+  border: 0;
+  display: block;
 }
 
 .g-3 {
@@ -332,7 +343,13 @@ textarea.form-control {
 .card-header {
   padding: 1rem 1.5rem;
   background: var(--color-header);
-  color: var(--white);
+  color: inherit; /* Permite que el texto herede el color natural o respete clases de utilidad como bg-light */
+}
+
+/* Regla complementaria para garantizar tipografía oscura sobre cabeceras claras */
+.card-header.bg-light {
+  background-color: #f8f9fa !important;
+  color: #212529 !important;
 }
 
 .card-footer {
