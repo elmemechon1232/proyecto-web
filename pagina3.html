@@ -20,15 +20,59 @@
     </nav>
 
     <header class="page-banner-custom">
-      <h1>Reserva y contacto</h1>
+        <h1 class="page-banner-custom">Reserva y contacto</h1>
         <p>Planifica tu visita a Destino Cordillera.</p>
     </header>
 
   <main class="container py-5">
-    <div class="row g-4">
+    <section class="contact-map-layout" aria-label="Información de contacto y ubicación">
+      <article class="card border-0 shadow-sm" style="background-color: #f8fafc; border-top: 4px solid #1b4332 !important;">
+        <div class="card-body p-4">
+          <h3 class="h5 fw-bold" style="color: #1b4332;">Centro de Atención al Visitante</h3>
+          <p class="text-muted small">
+            Para consultas inmediatas sobre condiciones climáticas o emergencias, comunícate directamente con nuestros canales oficiales:
+          </p>
 
-      <div class="col-lg-7">
-        <section class="form-card" aria-labelledby="form-heading">
+          <ul class="list-unstyled small mb-0">
+            <li class="py-2 border-bottom">
+              <strong>Ubicación Física:</strong><br>
+              Ruta G-25 Km 24, Sector El Melocotón, Cajón del Maipo / Cordillera Central.
+            </li>
+            <li class="py-2 border-bottom">
+              <strong>Teléfono Centro de Información:</strong><br>
+              +56 2 1234 4321 / +56 9 1122 3344
+            </li>
+            <li class="py-2 border-bottom">
+              <strong>Emergencias de Montaña (Socorro Andino):</strong><br>
+              136 (Línea directa nacional)
+            </li>
+            <li class="py-2 border-bottom">
+              <strong>Correo Electrónico Oficial:</strong><br>
+              reservas@destinocordillera.cl
+            </li>
+            <li class="pt-2">
+              <strong>Horario de Atención Presencial:</strong><br>
+              Lunes a Domingo de 08:00 a 18:30 hrs.
+            </li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="card map-card border-0 shadow-sm overflow-hidden">
+        <div class="card-header bg-dark text-white py-3">
+          <h3 class="h6 fw-bold mb-0">Mapa Esquemático de Acceso y Rutas</h3>
+        </div>
+        <div class="card-body p-0">
+          <img src="img/pagina3/map-cordillera.svg" alt="Mapa esquemático con las rutas y puntos de encuentro en Destino Cordillera" class="w-100 h-auto">
+        </div>
+        <div class="card-footer bg-light small">
+          <p class="mb-1"><strong>Coordenadas GPS Centro de Control:</strong> 33°44'28.5"S 70°14'12.2"W</p>
+          <p class="text-muted mb-0">Recomendación: Descargar mapa sin conexión antes de ingresar al cañón cordillerano.</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="form-card" aria-labelledby="form-heading">
           <h2 id="form-heading" class="h4 fw-bold mb-3" style="color: #1b4332;">Solicitud de Reserva y Consulta</h2>
           <p class="text-muted small mb-4">
             Los campos marcados con <span class="required-mark">*</span> son de caracter obligatorio. Por favor, asegúrese de completar toda la información requerida antes de enviar su solicitud. Nuestro equipo se pondrá en contacto con usted a la brevedad para confirmar su reserva o responder a sus consultas.
@@ -43,7 +87,7 @@
                        id="nombre" 
                        name="nombre" 
                        class="form-control" 
-                       placeholder="Ej: Sofía Valenzuela Morales" 
+                       placeholder="Ej: Ximena Prado the best" 
                        required 
                        aria-required="true">
               </div>
@@ -55,7 +99,7 @@
                          id="email" 
                          name="email" 
                          class="form-control" 
-                         placeholder="correo@ejemplo.cl" 
+                         placeholder="Ximena.prado@the.best.cl" 
                          required 
                          aria-required="true">
                 </div>
@@ -78,10 +122,20 @@
 
               <div class="mb-3">
                 <label for="actividad" class="form-label">Seleccione el Panorama de Interés <span class="required-mark">*</span></label>
-
+                <select id="actividad" 
+                        name="actividad" 
+                        class="form-select" 
+                        required 
+                        aria-required="true">
+                  <option value="" disabled selected>-- Seleccione una opción --</option>
+                  <option value="senderismo">Senderismo Guiado</option>
+                  <option value="escalada">Escalada en Roca</option>
+                  <option value="rafting">Rafting en Río Cordillera</option>
+                  <option value="observacion">Observación de Flora y Fauna</option>
+                </select>
+              </div>
 
               <div class="row g-3">
-                <!-- Fecha de la Visita -->
                 <div class="col-md-6 mb-3">
                   <label for="fecha" class="form-label">Fecha Estimada de Visita <span class="required-mark">*</span></label>
                   <input type="date" 
@@ -92,7 +146,7 @@
                          aria-required="true">
                 </div>
 
-                <!-- Cantidad de Personas -->
+                
                 <div class="col-md-6 mb-3">
                   <label for="cantidad" class="form-label">Cantidad de Personas <span class="required-mark">*</span></label>
                   <input type="number" 
@@ -113,7 +167,6 @@
             <fieldset class="form-fieldset">
               <legend class="form-legend">3. Observaciones y Aceptación</legend>
 
-              <!-- Mensaje / Requerimientos Especiales -->
               <div class="mb-3">
                 <label for="mensaje" class="form-label">Requerimientos Médicos, Dietéticos o Consultas <span class="required-mark">*</span></label>
                 <textarea id="mensaje" 
@@ -147,16 +200,6 @@
 
           </form>
         </section>
-      </div>
-
-      <aside class="col-lg-5" aria-label="Información de contacto directo y mapa de acceso">
-
-        
-
-           
-      </aside>
-
-    </div>
   </main>
 
     <footer class="site-footer-custom">

@@ -10,7 +10,7 @@
   --border: #d8e2dc;
   --white: #ffffff;
   --verdebosque : #1e6e4d;
-  --color-header: #1b4332;
+  --color-header: #112A22;
   --color-banner:#212529;;
 }
 
@@ -72,8 +72,8 @@ h4 {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: var(--verdebosque);
-  border-bottom: 3px solid var(--gris);
+  background: var(--color-header);
+  border-bottom: 3px solid var(--texto);
   box-shadow: 0 2px 6px rgba(43, 45, 66, 0.08);
 }
 
@@ -88,7 +88,7 @@ h4 {
 .brand-link {
   display: flex;
   align-items: center;
-    color: var(--texto  );
+  color: var(--white);
 }
 
 .brand-logo {
@@ -112,7 +112,7 @@ h4 {
 .nav-link-custom {
   display: inline-block;
   padding: 0.6rem 1rem;
-  color: var(--texto);
+  color: var(--white);
   border-radius: 4px;
   font-size: 0.95rem;
   font-weight: 600;
@@ -120,7 +120,7 @@ h4 {
 }
 
 .nav-link-custom:hover {
-  color: var(--color-primario);
+  color: var(--white);
   background: rgba(45, 106, 79, 0.08);
   text-decoration: none;
 }
@@ -414,6 +414,10 @@ textarea.form-control {
 }
 
 @media (max-width: 768px) {
+  .contact-map-layout {
+    grid-template-columns: 1fr;
+  }
+
   .nav-container {
     flex-direction: column;
     gap: 0.75rem;
