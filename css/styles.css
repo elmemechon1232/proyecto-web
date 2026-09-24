@@ -489,3 +489,46 @@ textarea.form-control {
     padding: 1rem;
   }
 }
+
+.header-cordillera {
+  background-image: linear-gradient(rgba(17, 42, 34, 0.7), rgba(17, 42, 34, 0.7)), url('../img/pagina1/cordillera.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-footer {
+  background-color: #212529;
+}
+
+.img-tarjeta-estandar {
+  height: 190px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.img-tarjeta-alta {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.video-cover {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.icono-widget {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+}
+
+.tarjeta-contacto {
+  background-color: #f8fafc;
+  border-top: 4px solid #1b4332 !important;
+}
+
+.text-primario-cordillera {
+  color: #1b4332 !important;
+}

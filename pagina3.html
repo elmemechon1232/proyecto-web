@@ -5,324 +5,356 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Destino Cordillera - Reserva y contacto</title>
     
+    <!-- Favicon institucional -->
     <link rel="icon" type="image/webp" href="img/icono.webp" />
 
+    <!-- Estilos de Bootstrap 5 y estilos locales -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet" />
 </head>
 <body class="pagina-reserva">
-    <nav class="barra_navegacion-custom ">
-        <div class="container nav-container">
-            <a class="brand-link" href="index.html">Destino Cordillera</a>
-            <ul class="nav-menu">
-                <li class="nav-item"><a class="nav-link-custom" href="index.html">Inicio</a></li>
-                <li class="nav-item"><a class="nav-link-custom" href="pagina1.html">Panoramas</a></li>
-                <li class="nav-item"><a class="nav-link-custom" href="pagina2.html">Alojamiento y gastronomía</a></li>
-                <li class="nav-item"><a class="nav-link-custom active" aria-current="page" href="pagina3.html">Reserva y contacto</a></li>
-            </ul>
-        </div>
+    <!-- Barra de navegación responsiva -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <main class="container">
+              <a class="navbar-brand" href="index.html">Destino Cordillera</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Navegación"><span class="navbar-toggler-icon"></span></button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                      <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                      <li class="nav-item"><a class="nav-link" href="pagina1.html">Panoramas</a></li>
+                      <li class="nav-item"><a class="nav-link" href="pagina2.html">Alojamiento y gastronomía</a></li>
+                      <li class="nav-item"><a class="nav-link active" aria-current="page" href="pagina3.html">Reserva y contacto</a></li>
+                  </ul>
+              </div>
+          </div>
     </nav>
 
-    <header class="page-banner-custom" style="background-image: linear-gradient(rgba(17, 42, 34, 0.7), rgba(17, 42, 34, 0.7)), url('img/pagina1/cordillera.png'); background-size: cover; background-position: center;">
-        <h1 >Reserva y contacto</h1>
+    <!-- Cabecera principal institucional -->
+    <header class="page-banner-custom header-cordillera">
+        <h1>Reserva y contacto</h1>
         <p>Planifica tu visita a Destino Cordillera.</p>
     </header>
 
-  <main class="container py-5">
-    <section class="contact-map-layout" aria-label="Información de contacto y ubicación">
-      <!-- Tarjeta 1: Centro de Atención -->
-      <article class="card border-0 shadow-sm" style="background-color: #f8fafc; border-top: 4px solid #1b4332 !important;">
-        <div class="card-body p-4 d-flex flex-column justify-content-between">
-          <div>
-            <h3 class="h5 fw-bold" style="color: #1b4332;">Centro de Atención al Visitante</h3>
-            <p class="text-muted small">
-              Para consultas inmediatas sobre condiciones climáticas o emergencias, comunícate directamente con nuestros canales oficiales:
+    <main class="container py-5">
+        <!-- Sección de Información de Contacto y Ubicación Satelital -->
+        <section class="contact-map-layout" aria-label="Información de contacto y ubicación">
+            <!-- Tarjeta 1: Centro de Atención -->
+            <article class="card border-0 shadow-sm tarjeta-contacto">
+                <div class="card-body p-4 d-flex flex-column justify-content-between">
+                    <div>
+                        <h3 class="h5 fw-bold" style="color: #1b4332;">Centro de Atención al Visitante</h3>
+                        <p class="text-muted small">
+                            Para consultas inmediatas sobre condiciones climáticas o emergencias, comunícate directamente con nuestros canales oficiales:
+                        </p>
+
+                        <ul class="list-unstyled small mb-0">
+                            <li class="py-2 border-bottom">
+                                <strong>Ubicación Física:</strong><br>
+                                Ruta G-25 Km 24, Sector El Melocotón, Cajón del Maipo / Cordillera Central.
+                            </li>
+                            <li class="py-2 border-bottom">
+                                <strong>Teléfono Centro de Información:</strong><br>
+                                +56 2 1234 4321 / +56 9 1122 3344
+                            </li>
+                            <li class="py-2 border-bottom">
+                                <strong>Emergencias de Montaña (Socorro Andino):</strong><br>
+                                136 (Línea directa nacional)
+                            </li>
+                            <li class="py-2 border-bottom">
+                                <strong>Correo Electrónico Oficial:</strong><br>
+                                reservas@destinocordillera.cl
+                            </li>
+                            <li class="pt-2">
+                                <strong>Horario de Atención Presencial:</strong><br>
+                                Lunes a Domingo de 08:00 a 18:30 hrs.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Tarjeta 2: Mapa Interactivo Google Maps -->
+            <article class="card map-card border-0 shadow-sm overflow-hidden">
+                <div class="card-header bg-dark text-white py-3">
+                    <h3 class="h6 fw-bold mb-0">Ubicación Satelital y Acceso</h3>
+                </div>
+                <div class="card-body p-0">
+                    <iframe
+                        src="https://maps.google.com/maps?q=Cajón%20del%20Maipo&t=&z=11&ie=UTF8&iwloc=&output=embed"
+                        loading="lazy"
+                        allowfullscreen=""
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Ubicación referencial Cajón del Maipo"
+                    ></iframe>
+                </div>
+                <div class="card-footer bg-light small">
+                    <p class="mb-1"><strong>Coordenadas GPS Centro de Control:</strong> 33°44'28.5"S 70°14'12.2"W</p>
+                    <p class="text-muted mb-0">Ubicación referencial: Cajón del Maipo, Cordillera de los Andes.</p>
+                </div>
+            </article>
+        </section>
+
+        <!-- Sección de Formulario de Reserva -->
+        <section class="form-card mt-4" aria-labelledby="form-heading">
+            <h2 id="form-heading" class="h4 fw-bold mb-3" style="color: #1b4332;">Solicitud de Reserva y Consulta</h2>
+            <p class="text-muted small mb-4">
+                Los campos marcados con <span class="required-mark">*</span> son de carácter obligatorio. Complete la información pertinente y nuestro equipo se contactará con usted a la brevedad.
             </p>
 
-            <ul class="list-unstyled small mb-0">
-              <li class="py-2 border-bottom">
-                <strong>Ubicación Física:</strong><br>
-                Ruta G-25 Km 24, Sector El Melocotón, Cajón del Maipo / Cordillera Central.
-              </li>
-              <li class="py-2 border-bottom">
-                <strong>Teléfono Centro de Información:</strong><br>
-                +56 2 1234 4321 / +56 9 1122 3344
-              </li>
-              <li class="py-2 border-bottom">
-                <strong>Emergencias de Montaña (Socorro Andino):</strong><br>
-                136 (Línea directa nacional)
-              </li>
-              <li class="py-2 border-bottom">
-                <strong>Correo Electrónico Oficial:</strong><br>
-                reservas@destinocordillera.cl
-              </li>
-              <li class="pt-2">
-                <strong>Horario de Atención Presencial:</strong><br>
-                Lunes a Domingo de 08:00 a 18:30 hrs.
-              </li>
-            </ul>
-          </div>
-        </div>
-      </article>
+            <form action="#" method="post" id="reserva-form">
+                <!-- Fieldset 1: Solicitante -->
+                <fieldset class="form-fieldset">
+                    <legend class="form-legend">1. Información del Solicitante</legend>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre Completo <span class="required-mark">*</span></label>
+                        <input type="text" 
+                               id="nombre" 
+                               name="nombre" 
+                               class="form-control" 
+                               placeholder="Ej: Matías Palma" 
+                               required 
+                               aria-required="true">
+                    </div>
 
-      <!-- Tarjeta 2: Mapa Interactivo Google Maps -->
-      <article class="card map-card border-0 shadow-sm overflow-hidden">
-        <div class="card-header bg-dark text-white py-3">
-          <h3 class="h6 fw-bold mb-0">Ubicación Satelital y Acceso</h3>
-        </div>
-        <div class="card-body p-0">
-          <iframe
-            src="https://maps.google.com/maps?q=Cajón%20del%20Maipo&t=&z=11&ie=UTF8&iwloc=&output=embed"
-            loading="lazy"
-            allowfullscreen=""
-            referrerpolicy="no-referrer-when-downgrade"
-            title="Ubicación referencial Cajón del Maipo"
-          ></iframe>
-        </div>
-        <div class="card-footer bg-light small">
-          <p class="mb-1"><strong>Coordenadas GPS Centro de Control:</strong> 33°44'28.5"S 70°14'12.2"W</p>
-          <p class="text-muted mb-0">Ubicación referencial: Cajón del Maipo, Cordillera de los Andes.</p>
-        </div>
-      </article>
-    </section>
+                    <div class="row g-3">
+                        <div class="col-md-6 mb-3">
+                            <label for="email" class="form-label">Correo Electrónico <span class="required-mark">*</span></label>
+                            <input type="email" 
+                                   id="email" 
+                                   name="email" 
+                                   class="form-control" 
+                                   placeholder="correo@ejemplo.cl" 
+                                   required 
+                                   aria-required="true">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="telefono" class="form-label">Teléfono / Celular <span class="required-mark">*</span></label>
+                            <input type="tel" 
+                                   id="telefono" 
+                                   name="telefono" 
+                                   class="form-control" 
+                                   placeholder="+56 9 1234 5678" 
+                                   pattern="[+0-9\s]{8,15}"
+                                   required 
+                                   aria-required="true">
+                        </div>
+                    </div>
+                </fieldset>
 
-    <section class="form-card" aria-labelledby="form-heading">
-          <h2 id="form-heading" class="h4 fw-bold mb-3" style="color: #1b4332;">Solicitud de Reserva y Consulta</h2>
-          <p class="text-muted small mb-4">
-            Los campos marcados con <span class="required-mark">*</span> son de caracter obligatorio. Por favor, asegúrese de completar toda la información requerida antes de enviar su solicitud. Nuestro equipo se pondrá en contacto con usted a la brevedad para confirmar su reserva o responder a sus consultas.
-          </p>
+                <!-- Fieldset 2: Actividades -->
+                <fieldset class="form-fieldset">
+                    <legend class="form-legend">2. Selección de Actividad y Fecha</legend>
+                    <div class="mb-3">
+                        <label for="actividad" class="form-label">Seleccione el Panorama de Interés <span class="required-mark">*</span></label>
+                        <select id="actividad" 
+                                name="actividad" 
+                                class="form-select" 
+                                required 
+                                aria-required="true">
+                            <option value="" disabled selected>-- Seleccione una opción --</option>
+                            <option value="circuitocanopy">Circuito Canopy</option>
+                            <option value="Tour">Tour bajo las estrellas</option>
+                            <option value="Trekking">Trekking Mirador del Valle</option>
+                            <option value="Cabalgata">Cabalgata por la cordillera</option>
+                            <option value="Rafting">Rafting Aguas Blancas</option>
+                            <option value="Termas">Termas de Alta Montaña</option>
+                        </select>
+                    </div>
 
-          <form action="#" method="post" id="reserva-form">
-            <fieldset class="form-fieldset">
-              <legend class="form-legend">1. Información del Solicitante</legend>
-              <div class="mb-3">
-                <label for="nombre" class="form-label">Nombre Completo <span class="required-mark">*</span></label>
-                <input type="text" 
-                       id="nombre" 
-                       name="nombre" 
-                       class="form-control" 
-                       placeholder="Ej: Ximena Prado the best" 
-                       required 
-                       aria-required="true">
-              </div>
+                    <div class="row g-3">
+                        <div class="col-md-6 mb-3">
+                            <label for="fecha" class="form-label">Fecha Estimada de Visita <span class="required-mark">*</span></label>
+                            <input type="date" 
+                                   id="fecha" 
+                                   name="fecha" 
+                                   class="form-control" 
+                                   required 
+                                   aria-required="true">
+                        </div>
 
-              <div class="row g-3">
-                <div class="col-md-6 mb-3">
-                  <label for="email" class="form-label">Correo Electrónico <span class="required-mark">*</span></label>
-                  <input type="email" 
-                         id="email" 
-                         name="email" 
-                         class="form-control" 
-                         placeholder="Ximena.prado@the.best.cl" 
-                         required 
-                         aria-required="true">
+                        <div class="col-md-6 mb-3">
+                            <label for="cantidad" class="form-label">Cantidad de Personas <span class="required-mark">*</span></label>
+                            <input type="number" 
+                                   id="cantidad" 
+                                   name="cantidad" 
+                                   class="form-control" 
+                                   min="1" 
+                                   max="20" 
+                                   value="2" 
+                                   required 
+                                   aria-required="true">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <!-- Fieldset 3: Alojamientos Creativos -->
+                <fieldset class="form-fieldset">
+                    <legend class="form-legend">3. Selección de Alojamiento</legend>
+                    <p class="text-muted small mb-3">
+                        Si desea hospedarse en nuestras instalaciones, elija la modalidad que mejor se adapte a su estadía cordillerana.
+                    </p>
+                    <p class="text-muted small mb-4">
+                        <strong>Nota:</strong> Si no requiere hospedaje, puede prescindir de esta sección y continuar con las actividades diurnas.
+                    </p>
+
+                    <div class="mb-3">
+                        <label for="Alojamiento" class="form-label">Tipo de Alojamiento</label>
+                        <select id="Alojamiento" 
+                                name="Alojamiento" 
+                                class="form-select">
+                            <option value="" disabled selected>-- Seleccione una opción --</option>
+                            <option value="cabana_sin_termas">Cabaña Rústica Bosque (Sin acceso a termas)</option>
+                            <option value="cabana_con_termas">Cabaña Termal Premium (Con tinajas y acceso privado a termas)</option>
+                            <option value="domo_astronomico">Domo Geodésico Astral (Techo panorámico y observación nocturna)</option>
+                            <option value="refugio_alpino">Refugio Cordillerano Base (Calefacción a leña y ambiente rústico)</option>
+                        </select>
+                    </div>
+
+                    <div class="row g-3">
+                        <div class="col-md-6 mb-3">
+                            <label for="fecha_llegada" class="form-label">Fecha de Llegada</label>
+                            <input type="date" 
+                                   id="fecha_llegada" 
+                                   name="fecha_llegada" 
+                                   class="form-control">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="fecha_salida" class="form-label">Fecha de Salida</label>
+                            <input type="date" 
+                                   id="fecha_salida" 
+                                   name="fecha_salida" 
+                                   class="form-control">
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label for="cantidad_alojamiento" class="form-label">Huéspedes</label>
+                            <input type="number" 
+                                   id="cantidad_alojamiento" 
+                                   name="cantidad_alojamiento" 
+                                   class="form-control" 
+                                   min="1" 
+                                   max="10" 
+                                   value="2">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <!-- Fieldset 4: Observaciones -->
+                <fieldset class="form-fieldset">
+                    <legend class="form-legend">4. Observaciones y Aceptación</legend>
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">Requerimientos Médicos, Dietéticos o Consultas <span class="required-mark">*</span></label>
+                        <textarea id="mensaje" 
+                                  name="mensaje" 
+                                  rows="4" 
+                                  class="form-control" 
+                                  placeholder="Indique si algún participante posee condiciones médicas específicas, alergias alimentarias o si requiere asistencia técnica..." 
+                                  required 
+                                  aria-required="true"></textarea>
+                    </div>
+
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" type="checkbox" id="terminos" name="terminos" required aria-required="true">
+                        <label class="form-check-label small" for="terminos">
+                            Declaro conocer las normas de seguridad en alta montaña y me comprometo a acatar las instrucciones del guía asignado. <span class="required-mark">*</span>
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="boletin" name="boletin" checked>
+                        <label class="form-check-label small text-muted" for="boletin">
+                            Deseo recibir reportes meteorológicos y avisos de nuevas rutas habilitadas.
+                        </label>
+                    </div>
+                </fieldset>
+
+                <!-- Botón de Envío y Alerta Interactiva -->
+                <div class="d-flex flex-column align-items-start gap-3 pt-2">
+                    <button type="submit" class="btn btn-cordillera-primary px-4">Enviar Solicitud de Reserva</button>
+                    
+                    <div id="mensaje-exito" class="alert alert-success d-none w-100 mt-2 mb-0 shadow-sm" role="alert">
+                        <h5 class="alert-heading fw-bold mb-1">¡Solicitud recibida con éxito!</h5>
+                        <p class="mb-0 small">
+                            Hemos registrado sus datos satisfactoriamente. Por favor, revise su correo electrónico en los próximos minutos para constatar su pre-reserva e instrucciones de acceso.
+                        </p>
+                    </div>
                 </div>
-                <div class="col-md-6 mb-3">
-                  <label for="telefono" class="form-label">Teléfono / Celular <span class="required-mark">*</span></label>
-                  <input type="tel" 
-                         id="telefono" 
-                         name="telefono" 
-                         class="form-control" 
-                         placeholder="+56 9 1234 5678" 
-                         pattern="[+0-9\s]{8,15}"
-                         required 
-                         aria-required="true">
-                </div>
-              </div>
-            </fieldset>
-
-            <fieldset class="form-fieldset">
-              <legend class="form-legend">2. Selección de Actividad y Fecha</legend>
-
-              <div class="mb-3">
-                <label for="actividad" class="form-label">Seleccione el Panorama de Interés <span class="required-mark">*</span></label>
-                <select id="actividad" 
-                        name="actividad" 
-                        class="form-select" 
-                        required 
-                        aria-required="true">
-                  <option value="" disabled selected>-- Seleccione una opción --</option>
-                  <option value="circuitocanopy">Circuito Canopy</option>
-                  <option value="Tour">Tour bajo las estrellas</option>
-                  <option value="Trekking">Trekking Mirador del Valle</option>
-                  <option value="Cabalgata">Cabalgata por la cordillera</option>
-                  <option value="Rafting">Rafting Aguas Blancas</option>
-                  <option value="Termas">Termas de Alta Montaña</option>
-                </select>
-              </div>
-
-              <div class="row g-3">
-                <div class="col-md-6 mb-3">
-                  <label for="fecha" class="form-label">Fecha Estimada de Visita <span class="required-mark">*</span></label>
-                  <input type="date" 
-                         id="fecha" 
-                         name="fecha" 
-                         class="form-control" 
-                         required 
-                         aria-required="true">
-                </div>
-
-                
-                <div class="col-md-6 mb-3">
-                  <label for="cantidad" class="form-label">Cantidad de Personas <span class="required-mark">*</span></label>
-                  <input type="number" 
-                         id="cantidad" 
-                         name="cantidad" 
-                         class="form-control" 
-                         min="1" 
-                         max="20" 
-                         value="2" 
-                         required 
-                         aria-required="true">
-                </div>
-              </div>
-
-
-            </fieldset>
-
-            <fieldset class="form-fieldset">
-              <legend class="form-legend">3. Seleccione alojamiento</legend>
-              <p class="text-muted small mb-4">
-                Si desea hospedarse en nuestras cabañas o campings, por favor indique su preferencia. Tenga en cuenta que la disponibilidad puede variar según la temporada y la demanda.
-              </p>
-              <p class="text-muted small mb-4">
-                <strong>Nota:</strong> Si no desea alojamiento, puede dejar esta sección en blanco y continuar con la reserva de actividades.
-              </p>
-
-              <div class="mb-3">
-                <label for="Alojamiento" class="form-label">Tipo de Alojamiento </label>
-                <select id="Alojamiento" 
-                        name="Alojamiento" 
-                        class="form-select" 
-                        required 
-                        aria-required="true">
-                  <option value="" disabled selected>-- Seleccione una opción --</option>
-                  <option value="refugio">Refugios de ensueño</option>
-                  <option value="termal">Relajacion termal</option>
-                  <option value="vistas">vistas inigualables</option>
-                </select>
-              </div>
-
-              <div class="row g-3">
-                <div class="col-md-6 mb-3">
-                  <label for="fecha" class="form-label">Fecha Estimada de Visita llegada </label>
-                  <input type="date" 
-                         id="fecha" 
-                         name="fecha" 
-                         class="form-control" 
-                         required 
-                         aria-required="true">
-                </div>
-                <div class="col-md-6 mb-3">
-                  <label for="fecha" class="form-label">Fecha Estimada de Visita salida</label>
-                  <input type="date" 
-                         id="fecha" 
-                         name="fecha" 
-                         class="form-control" 
-                         required 
-                         aria-required="true">
-                </div>
-
-                
-                <div class="col-md-6 mb-3">
-                  <label for="cantidad" class="form-label">Cantidad de Personas </label>
-                  <input type="number" 
-                         id="cantidad" 
-                         name="cantidad" 
-                         class="form-control" 
-                         min="1" 
-                         max="20" 
-                         value="2" 
-                         required 
-                         aria-required="true">
-                </div>
-              </div>
-
-
-            </fieldset>
-
-            <fieldset class="form-fieldset">
-              <legend class="form-legend">4. Observaciones y Aceptación</legend>
-
-              <div class="mb-3">
-                <label for="mensaje" class="form-label">Requerimientos Médicos, Dietéticos o Consultas <span class="required-mark">*</span></label>
-                <textarea id="mensaje" 
-                          name="mensaje" 
-                          rows="4" 
-                          class="form-control" 
-                          placeholder="Indique si algún participante tiene condiciones cardíacas, alergias alimentarias o si requiere préstamo de bastones..." 
-                          required 
-                          aria-required="true"></textarea>
-              </div>
-
-              <div class="form-check mb-2">
-                <input class="form-check-input" type="checkbox" id="terminos" name="terminos" required aria-required="true">
-                <label class="form-check-label small" for="terminos">
-                  Declaro conocer las normas de seguridad en alta montaña y me comprometo a seguir las instrucciones del guía asignado. <span class="required-mark">*</span>
-                </label>
-              </div>
-
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="boletin" name="boletin" checked>
-                <label class="form-check-label small text-muted" for="boletin">
-                  Deseo recibir el reporte meteorológico semanal y avisos de nuevas rutas.
-                </label>
-              </div>
-            </fieldset>
-
-            <div class="d-flex gap-3 justify-content-start pt-2">
-              <button type="submit" class="btn btn-cordillera-primary px-4">Enviar Solicitud de Reserva</button>
-            </div>
-
-          </form>
+            </form>
         </section>
-  </main>
+    </main>
 
-    <footer class="site-footer-custom">
-    <div class="container">
-        <div class="row">
-            
-            <div class="col-md-3 mb-4">
-                <h4>Destino Cordillera</h4>
-                <p class="small">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.
-                </p>
+    <!-- Pie de página unificado -->
+<!-- Pie de página unificado -->
+    <footer class="text-light py-5 mt-5 bg-footer">
+        <div class="container">
+            <div class="row">
+                <!-- Columna 1: Descripción institucional -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="fw-bold mb-3 pb-2" style="border-bottom: 2px solid #5BC0BE; display: inline-block;">Destino Cordillera</h5>
+                    <p class="small">
+                        Brindando un servicio de excelencia y experiencias sublimes en el corazón de nuestras montañas.
+                    </p>
+                </div>
+
+                <!-- Columna 2: Enlaces rápidos -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="fw-bold mb-3 pb-2" style="border-bottom: 2px solid #5BC0BE; display: inline-block;">Enlaces Rápidos</h5>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2"><a href="index.html" class="text-light text-decoration-none">Página de Inicio</a></li>
+                        <li class="mb-2"><a href="pagina1.html" class="text-light text-decoration-none">Panoramas y Trekking</a></li>
+                        <li class="mb-2"><a href="pagina2.html" class="text-light text-decoration-none">Alojamiento y Gastronomía</a></li>
+                        <li class="mb-2"><a href="pagina3.html" class="text-light text-decoration-none">Reservas y Ubicación</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3: Seguridad y Contacto -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="fw-bold mb-3 pb-2" style="border-bottom: 2px solid #5BC0BE; display: inline-block;">Seguridad y Contacto</h5>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2"><strong>Centro de control:</strong> Km 24 Ruta G-25</li>
+                        <li class="mb-2"><strong>Emergencias:</strong> 136</li>
+                        <li class="mb-2"><strong>Guardaparques:</strong> +56 9 8765 4321</li>
+                        <li class="mb-2"><strong>Email:</strong> contacto@destinocordillera.cl</li>
+                    </ul>
+                </div>
+
+                <!-- Columna 4: Datos académicos -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="fw-bold mb-3 pb-2" style="border-bottom: 2px solid #5BC0BE; display: inline-block;">Datos Legales</h5>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2">Asignatura de Desarrollo Web</li>
+                        <li class="mb-2">Solemne 1</li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="col-md-3 mb-4">
-                <h4>Enlaces rapidos</h4>
-                <ul class="list-unstyled small">
-                    <li class="mb-2"><a href="index.html">Página de Inicio</a></li>
-                    <li class="mb-2"><a href="pagina1.html">Panoramas</a></li>
-                    <li class="mb-2"><a href="pagina2.html">Hospedajes y sabores</a></li>
-                    <li class="mb-2"><a href="pagina3.html">Reservas y ubicación</a></li>
-                </ul>
-            </div>
+            <hr class="border-secondary opacity-50 mb-4">
 
-            <div class="col-md-3 mb-4">
-                <h4>Seguridad y Contacto</h4>
-                <ul class="list-unstyled small">
-                    <li class="mb-2"><strong>Centro de control:</strong> Carretera Km 24</li>
-                    <li class="mb-2"><strong>Emergencias:</strong> 136</li>
-                    <li class="mb-2"><strong>Guardaparques:</strong> +56 9 1122 3344</li>
-                    <li class="mb-2"><strong>Email:</strong> contacto@destinocordillera.cl</li>
-                </ul>
+            <!-- Derechos reservados -->
+            <div class="row">
+                <div class="col-12 text-center text-md-end small text-light">
+                    <p class="mb-0">© 2026 Destino Cordillera - Proyecto para desarrollo web.</p>
+                </div>
             </div>
-            <div class="col-md-3 mb-4">
-                <h4>Datos</h4>
-                <ul class="list-unstyled small">
-                    <li class="mb-2">Desarrollo Web</li>
-                    <li class="mb-2">Solemne 1</li>
-                </ul>
-            </div>
-            
         </div>
-
-   
-        <div class="footer-bottom-custom">
-            <p>© 2026 Destino Cordillera - Proyecto para desarrollo web.</p>
-        </div>
-
-    </div>
     </footer>
+
+    <script>
+        document.getElementById('reserva-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            if (this.checkValidity()) {
+                const mensajeExito = document.getElementById('mensaje-exito');
+                mensajeExito.classList.remove('d-none');
+                mensajeExito.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                
+                setTimeout(() => {
+                    this.reset();
+                }, 4000);
+            } else {
+                this.reportValidity();
+            }
+        });
+    </script>
 </body>
 </html>
