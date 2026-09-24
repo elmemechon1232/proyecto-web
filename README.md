@@ -6,7 +6,7 @@ Nombre del proyecto: Plataforma de Turismo Local Destino Cordillera
 
 Integrantes: Matias Palma - Jazmin Ruz - Emerson Gálvez
 
-Descripcion sitio: es un sitio web donde se puede acceder a los principales panoramas, alojamiento y gastronomia local de Destino Cordillera.
+Descripcion sitio: El sitio web presenta una propuesta de promoción turística para la comuna ficticia “Destino Cordillera”, incluyendo información sobre panoramas, actividades, alojamiento, gastronomía y un formulario para reserva y contacto.
 
 Tecnologias: HTML5, CSS3, Bootstrap 5, git y github
 
