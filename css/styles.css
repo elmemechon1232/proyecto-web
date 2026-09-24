@@ -169,6 +169,27 @@ main.container {
   padding-bottom: 3rem;
 }
 
+.pagina-reserva .contact-map-layout {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.pagina-reserva .contact-map-layout .card {
+  height: 100%;
+}
+
+.pagina-reserva .contact-map-layout .map-card {
+  order: -1;
+}
+
+.pagina-reserva .contact-map-layout .map-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .g-3 {
   row-gap: 1rem;
 }
@@ -321,19 +342,32 @@ textarea.form-control {
 
 /* Pie de pagina */
 .site-footer-custom {
-  margin-top: auto;
-  padding-top: 3rem;
-  padding-bottom: 1.5rem;
-  color: #cfd8dc;
-  background: #112218;
-  border-top: 4px solid var(--color-secundario);
+  margin-top: 3rem;
+  padding: 3rem 0 1.5rem;
+  color: var(--white);
+  background: var(--color-header);
 }
 
 .site-footer-custom h4 {
-  margin: 0 0 0.75rem;
-  padding-bottom: 0.4rem;
+  display: inline-block;
+  margin: 0 0 1rem;
+  padding-bottom: 0.5rem;
   color: var(--white);
+  border-bottom: 2px solid #5bc0be;
   font-size: 1.05rem;
+}
+
+.pagina-reserva .site-footer-custom .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -0.75rem;
+  margin-left: -0.75rem;
+}
+
+.pagina-reserva .site-footer-custom .row > * {
+  width: 100%;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
 }
 
 .site-footer-custom p {
@@ -362,8 +396,9 @@ textarea.form-control {
 }
 
 .site-footer-custom a:hover {
-  color: #48cae4;
-  padding-left: 4px;
+  color: #eceff1;
+  padding-left: 0;
+  text-decoration: none;
 }
 
 .footer-bottom-custom {
@@ -406,6 +441,8 @@ textarea.form-control {
   .col-md-3 { width: 25%; }
   .col-md-4 { width: 33.333333%; }
   .col-md-6 { width: 50%; }
+
+  .pagina-reserva .site-footer-custom .col-md-3 { width: 25%; }
 }
 
 @media (min-width: 992px) {
@@ -414,7 +451,7 @@ textarea.form-control {
 }
 
 @media (max-width: 768px) {
-  .contact-map-layout {
+  .pagina-reserva .contact-map-layout {
     grid-template-columns: 1fr;
   }
 
